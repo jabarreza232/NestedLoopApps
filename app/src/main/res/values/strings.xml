@@ -1,0 +1,29 @@
+<resources>
+    <!-- Nama Aplikasi nya  -->
+    <string name="app_name">Nested Loop Apps</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <!-- Nama Tab yang pertama  -->
+    <string name="tab_bilangan">Bilangan</string>
+    <!-- Nama Tab yang kedua  -->
+    <string name="tab_bangunan">Bangun Datar</string>
+    <!--untuk textview di dalam layout agar menghindarkan hard code -->
+    <string name="bilangan_prima">Bilangan Prima</string>
+    <string name="hint">Masukkan Angka</string>
+    <string name="hasil">Hasil</string>
+    <string name="bilangan_genap">Bilangan Genap</string>
+    <string name="bilangan_ganjil">Bilangan Ganjil</string>
+    <string name="submit">Submit</string>
+    <string name="note">Note : Silahkan Pilih Item Terlebih dahulu</string>
+
+    <!--array untuk menampilkan beberapa item di dalam spinner -->
+    <string-array name="spin_bil">
+        <item>--Pilih--</item>
+        <item>Bilangan Prima</item>
+        <item>Bilangan Genap</item>
+        <item>Bilangan Ganjil</item>
+        <item>Semua Bilangan</item>
+    </string-array>
+
+</resources>
