@@ -3,10 +3,10 @@ Aplikasi android perulangan bersarang dengan menggunakan library butterknife, ca
 
 # Screenshot
 <p float="left">
-<img src="screenshot/ss1.jpg" height="400px"/>
-<img src="screenshot/ss2.jpg" height="400px"/>
-<img src="screenshot/ss3.jpg" height="400px"/>
-<img src="screenshot/ss4.jpg" height="400px"/>
+<img src="screenshot/ss1.jpeg" height="400px"/>
+<img src="screenshot/ss2.jpeg" height="400px"/>
+<img src="screenshot/ss3.jpeg" height="400px"/>
+<img src="screenshot/ss4.jpeg" height="400px"/>
   <img src="screenshot/ss5.jpg" height="400px"/>
 
 </p>
