@@ -68,10 +68,8 @@ Button submit;
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-
-      View view= inflater.inflate(R.layout.fragment_bilangan, container, false);
-
-      ButterKnife.bind(this,view);
+        View view= inflater.inflate(R.layout.fragment_bilangan, container, false);
+         ButterKnife.bind(this,view);
          //Mengimplementasikan spinner
         ArrayAdapter<CharSequence>adapter = ArrayAdapter.createFromResource(getContext(),R.array.spin_bil,android.R.layout.simple_list_item_1);
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
@@ -79,7 +77,6 @@ Button submit;
         spin_item.setOnItemSelectedListener(this);
         submit.setOnClickListener(this);
         return view;
-
     }
 
     @Override
@@ -136,7 +133,6 @@ Button submit;
             labelBilGanjil.setVisibility(GONE);
             hasilBilGanjil.setVisibility(GONE);
         }
-
     }
     //Fungsi untuk menampilkan seluruh bilangan
     void show_item_4(){
@@ -144,11 +140,9 @@ Button submit;
     Object a= spin_item.getItemAtPosition(0);
     if (spin_item.getSelectedItem().equals(d)) {
     show_all_item();
-
     }else if (spin_item.getSelectedItem().equals(a)){
         hide_all_item();
     }
-
 }
     void show_all_item(){
         edtNilaiAwal.setVisibility(View.VISIBLE);
@@ -200,7 +194,6 @@ try {
             hasil += " " + i + " ";
             hasilBilPrima.setText("Hasil bilangan prima dari " + nilaiAwal + " sampai " + nilaiAkhir + " : " + hasil);
         }
-
         hasilBilPrima.setText("Hasil bilangan prima dari " + nilaiAwal + " sampai " + nilaiAkhir + " Adalah : " + hasil);
 
     }
@@ -214,6 +207,7 @@ try {
     //Fungsi Inputan Bilangan Genap
     @SuppressLint("SetTextI18n")
     private void LogicBilanganGenap(String inputNilaiGenap){
+
         try {
             int nilaiGenap = Integer.valueOf(inputNilaiGenap);
             String hasil="";
@@ -238,12 +232,10 @@ try {
         try {
             int nilaiGanjil = Integer.valueOf(inputNilaiGanjil);
             String hasil="";
-
             for (int i = 0; i <= nilaiGanjil; i++) {
 
                 if (i % 2 == 1) {
                     hasil+=" "+ i +" ";
-
                     hasilBilGanjil.setText("Hasil : " + hasil);
 
                 }
@@ -271,6 +263,7 @@ try {
         LogicInputNilaiBilanganPrima(inputNilaiAwal,inputNilaiAkhir);
         LogicInputNilaiBilanganGenap(inputNilaiGenap);
         LogicInputNilaiBilanganGanjil(inputNilaiGanjil);
+
     }
 
     /*Fungsi untuk memberitahukan jika nilai kosong akan muncul pemberitahuan toast pada nilai inputan masing-masing.
@@ -282,13 +275,13 @@ try {
         }else {
             LogicBilanganPrima(inputNilaiAwal, inputNilaiAkhir);
         }
-
     }
     private void LogicInputNilaiBilanganGenap(String inputNilaiGenap){
     if(inputNilaiGenap.isEmpty()){
         FancyToast.makeText(getContext(),"Silahkan Segera di isi nilai bilangan genap yang ingin di inputkan !",FancyToast.LENGTH_SHORT,FancyToast.WARNING,true).show();
     }else {
         LogicBilanganGenap(inputNilaiGenap);
+
         }
     }
     private void LogicInputNilaiBilanganGanjil(String inputNilaiGanjil){
@@ -297,6 +290,7 @@ try {
     }else{
         LogicBilanganGanjil(inputNilaiGanjil);
     }
+
   }
 
 }

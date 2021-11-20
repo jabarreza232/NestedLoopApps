@@ -17,6 +17,7 @@ Created By : Jabar Syahrial Reza
 Tgl 10 Januari 2019
 
  */
+
 public class BentukRumus extends Fragment {
     public BentukRumus() {
         // Required empty public constructor
@@ -25,14 +26,13 @@ public class BentukRumus extends Fragment {
     TextView persegi;
     @BindView(R.id.txt_segitiga)
     TextView segitiga;
-
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_bentuk_rumus, container, false);
         ButterKnife.bind(this, view);
-//Pemanggilan kedua fungsi perulangan bersarang persegi dan segitiga
+       //Pemanggilan kedua fungsi perulangan bersarang persegi dan segitiga
         LogicNestedLoopPersegi();
         LogicNestedLoopSegitiga();
         return view;
@@ -49,7 +49,7 @@ public class BentukRumus extends Fragment {
                 persegi.setText(hasil);
             }
         }
-    //Fungsi Untuk menampilkan perulangan bersarang segitiga
+        //Fungsi Untuk menampilkan perulangan bersarang segitiga
         private void LogicNestedLoopSegitiga(){
         String hasil="";
             for (int i = 1; i <=10 ; i++) {
@@ -60,7 +60,6 @@ public class BentukRumus extends Fragment {
                     segitiga.setText(hasil);
 
                 }
-
             }
         }
     }
